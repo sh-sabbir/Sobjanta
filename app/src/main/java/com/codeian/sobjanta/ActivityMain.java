@@ -1,5 +1,6 @@
 package com.codeian.sobjanta;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -37,6 +38,9 @@ public class ActivityMain extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         displaySelectedScreen(R.id.nav_routine);
+
+        Intent intent = new Intent(this, ActivityLogin.class);
+        startActivity(intent);
     }
 
     @Override
